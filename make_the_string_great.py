@@ -4,7 +4,7 @@ class Solution(object):
         :type s: str
         :rtype: str
         """
-        stack=deque()
+        stack=[]
         for i in s:
             if stack and abs(ord(stack[-1])-ord(i))==32:
                 stack.pop()
